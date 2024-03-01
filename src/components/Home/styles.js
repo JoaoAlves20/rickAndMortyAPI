@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DivHome = styled.div`
-  width: 737px;
+  width: 680px;
   height: 200px;
   background-color: rgb(0, 0, 0);
   margin: 10px;
@@ -13,7 +13,7 @@ export const DivHome = styled.div`
 
 export const DivBodyHome = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 `;
 

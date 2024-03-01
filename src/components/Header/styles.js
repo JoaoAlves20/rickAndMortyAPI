@@ -6,6 +6,7 @@ export const ContainerHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgb(240, 240, 240);
   color: rgb(1, 1, 1);
   font-size: 40px;

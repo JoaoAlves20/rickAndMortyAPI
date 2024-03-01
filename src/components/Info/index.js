@@ -1,20 +1,23 @@
 import PropTypes from 'prop-types';
 
-import { DivInfo, NameInfo } from './styles';
+import { DivInfo, LineStyle, NameClick } from './styles';
 
-export default function Info({ name, status, species, gender }) {
+export default function Info({ name, status, species, gender, getCharacter }) {
   return (
     <DivInfo>
-      <NameInfo>{name}</NameInfo>
-      <h2>{status} - {species}</h2>
-      <h2>{gender}</h2>
+      <NameClick onClick={getCharacter}>{name}</NameClick><br />
+      <label>Status - Species:</label>
+      <LineStyle color={status}>{status} - {species}</LineStyle><br />
+      <label>Gender:</label>
+      <h3>{gender}</h3>
     </DivInfo>
   )
 }
 
 Info.propTypes = {
-  name: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
-  species: PropTypes.string.isRequired,
-  gender: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  status: PropTypes.string,
+  species: PropTypes.string,
+  gender: PropTypes.string,
+  getCharacter: PropTypes.func
 }
