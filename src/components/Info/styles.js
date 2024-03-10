@@ -13,7 +13,8 @@ export const LineStyle = styled.h3`
 
 export const NameClick = styled.h2`
   cursor: pointer;
-  h2:hover{
-    background-color: rgb(255, 255, 255);
+  width: 200px;
+  &:hover{
+    color: rgb(203, 86, 32);
   }
 `;

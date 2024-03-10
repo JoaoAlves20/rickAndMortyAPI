@@ -11,9 +11,7 @@ export default createGlobalStyle`
 
   body {
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to right,
-      rgb(59, 60, 62),
-      rgb(32, 32, 33));
+    background-color: rgb(10, 10, 10);
     color: rgb(234, 235, 238);
   }
 `;
